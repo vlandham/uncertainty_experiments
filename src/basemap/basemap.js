@@ -68,4 +68,4 @@ function loadBaseMap(selector, geojsonFile) {
   return map;
 }
 
-loadBaseMap('#map', '/src/basemap/southsudan_admin.json');
+loadBaseMap('#map', '../../../src/basemap/southsudan_admin.json');
