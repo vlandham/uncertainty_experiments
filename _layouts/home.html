@@ -4,6 +4,7 @@ layout: default
 
 <div class="home">
 
+  <div class="row clearfix">
   <h2>Experiments</h2>
   {% assign experiments_g = site.experiments | group_by:"encoding" %}
 
@@ -19,6 +20,20 @@ layout: default
       {% endfor %}
     </div>
   {% endfor %}
+</div>
+
+
+  <div class="row clearfix">
+  <h2>Components</h2>
+
+    {% for component in site.components %}
+      <div class="experiment">
+        <a  href="{{ component.url | relative_url }}"><img class="thumb" src="{{ component.eid | prepend:'/src/' | append:'/thumb.png' | relative_url }}" /></a>
+        <a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a>
+      </div>
+
+    {% endfor %}
+  </div>
 <!--
   {% for type in site.data.uncertainty.types %}
     <p>{{type.name}}</p>

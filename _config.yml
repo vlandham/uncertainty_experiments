@@ -23,11 +23,19 @@ collections:
   experiments:
     output: true
     permalink: /:collection/:path/:title/
+  components:
+    output: true
+    permalink: /:collection/:path/:title/
 
 defaults:
   - scope:
       path: ""
       type: experiments
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: components
     values:
       layout: page
 
