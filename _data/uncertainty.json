@@ -1,0 +1,7 @@
+{
+  "types": [
+    {"name":"Spatial", "id":"spatial"},
+    {"name":"Temporal", "id":"temporal"},
+    {"name":"Cardinal", "id":"cardinal"}
+  ]
+}

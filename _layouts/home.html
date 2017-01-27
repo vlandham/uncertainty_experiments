@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h2>Experiments</h2>
+  {% assign experiments_g = site.experiments | group_by:"encoding" %}
+
+
+  {% for group in experiments_g %}
+    <div class="experiment-group">
+      <h3>{{ group.name | capitalize }}</h3>
+      {% for experiment in group.items %}
+      <div class="experiment {{ experiment.features | join:" " }}">
+        <a  href="{{ experiment.url | relative_url }}"><img class="thumb" src="{{ experiment.eid | prepend:'/src/' | append:'/thumb.png' | relative_url }}" /></a>
+        <a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+<!--
+  {% for type in site.data.uncertainty.types %}
+    <p>{{type.name}}</p>
+    {% assign experiments = site.experiments | where:'group', post.group %}
+  {% endfor %} -->
+
+
+  <!-- {% for experiment in site.experiments %}
+    <div class="experiment"><a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a></div>
+  {% endfor %}
+ -->
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+ -->
+</div>
