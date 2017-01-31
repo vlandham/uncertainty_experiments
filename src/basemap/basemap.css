@@ -4,3 +4,9 @@
   stroke-width: .5px;
   stroke-linejoin: round;
 }
+
+text {
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  pointer-events: none;
+}
