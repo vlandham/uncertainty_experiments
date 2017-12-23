@@ -1,0 +1,26 @@
+.vis {
+  float:left;
+}
+
+.vis canvas {
+}
+
+.toggle-btn {
+  float: left;
+}
+
+.caption {
+  color: #666;
+}
+
+.multi-hull {
+  position: relative;
+  height: 300px;
+}
+
+.multi-hull .hull {
+  position: absolute;
+  left:0;
+  top:0;
+  display:block;
+}

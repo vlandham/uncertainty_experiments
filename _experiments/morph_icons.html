@@ -1,0 +1,65 @@
+---
+eid: morph_icons
+title: Morph Icons
+uncertainty_type: categorical
+encoding: animation
+features:
+ - animation
+ - icons
+js: true
+css: true
+---
+
+<p>
+Considers these mock icons representing different event types:
+</p>
+
+<div id="iconsall" class="clearfix">
+</div>
+
+<p>
+  In a dataset, we might have probabilities associated with a particular event, as to the certainty that the event falls into a particular category.
+</p>
+
+<p>
+  In a map or other view, animation could be used to transition a particular event's icon between all the possible event types it might take.
+</p>
+
+<p>
+  The amount of time an icon is visible could be proportional to the probability associated with that event type. So more likely event types are displayed for the majority of the time.
+</p>
+
+<p>
+  Below is a morphing icon with two possible event types - both of equal probabiltiy (50%).
+</p>
+
+<div id="icon1" class="clearfix">
+</div>
+
+<p>
+  The transition used here is simplistic - but you could imagine more sophisticated transitions being used.
+</p>
+
+<p>
+  Below is a different morphing event marker with 3 possible event types of different probabilities (70%, 20%, 10%).
+</p>
+
+<div id="icon2" class="clearfix">
+</div>
+
+<p>
+  And a few more:
+</p>
+
+<div class="clearfix">
+  <div id="icon3">
+  </div>
+  <div id="icon4">
+  </div>
+  <div id="icon5">
+  </div>
+</div>
+
+<p>
+  One could imagine combining this animated view with a static display of event types and percentages on click or hover. This could be as simple as the icon / name of the event type along with the percent - or a bar representing the probability.
+</p>

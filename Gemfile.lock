@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
@@ -49,9 +49,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
-
-RUBY VERSION
-   ruby 2.3.1p112
 
 BUNDLED WITH
    1.14.3

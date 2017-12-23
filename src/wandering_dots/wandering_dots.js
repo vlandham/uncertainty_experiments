@@ -133,6 +133,15 @@ const plot = createWanderingDots();
 const plot2 = createWanderingDots().radius(50);
 const plot3 = createWanderingDots().radius(10);
 
-plot('#dot');
-plot2('#dot');
-plot3('#dot');
+plot('#dot1');
+plot2('#dot2');
+plot3('#dot3');
+
+
+const plotc = createWanderingDots().count(200);
+const plotc2 = createWanderingDots().count(100);
+const plotc3 = createWanderingDots().count(10);
+
+plotc('#dotc1');
+plotc2('#dotc2');
+plotc3('#dotc3');

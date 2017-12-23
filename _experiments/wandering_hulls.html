@@ -6,4 +6,46 @@ encoding: animation
 features:
  - animation
  - dots
+js: true
+css: true
 ---
+
+<p>
+  Here, we use the idea that events of more uncertain geo precision "wander" more around their indicated center or region.
+</p>
+
+<p>
+  As quick examples, here are wandering hulls for the 3 different levels of geo precision.
+</p>
+
+<div class="row">
+  <div class="col-md-4">
+    <div id="hull1"></div>
+    <p class="caption">Region Level Uncertainty</p>
+  </div>
+
+  <div class="col-md-4">
+    <div id="hull2"></div>
+    <p class="caption">Area Level Uncertainty</p>
+  </div>
+
+  <div class="col-md-4">
+    <div id="hull3"></div>
+    <p class="caption">Town Level Uncertainty</p>
+  </div>
+</div>
+
+<p>
+  The initial position of the hull is not well thought out in these experiments, and could be improved. The methodology of how the hull wanders could also be modified.
+</p>
+
+<p>
+  Opacity could be used to deal with overlap.
+</p>
+
+<div class="multi-hull clearfix">
+  <div class="hull" id="hull4">
+  </div>
+  <div class="hull" id="hull5">
+  </div>
+</div>

@@ -14,8 +14,8 @@ layout: default
       <h3>{{ group.name | capitalize }}</h3>
       {% for experiment in group.items %}
       <div class="experiment {{ experiment.features | join:" " }}">
-        <a  href="{{ experiment.url | relative_url }}"><img class="thumb" src="{{ experiment.eid | prepend:'/src/' | append:'/thumb.png' | relative_url }}" /></a>
-        <a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a>
+        <a  href="{{ experiment.url | prepend:'.' }}"><img class="thumb" src="{{ experiment.eid | prepend:'/src/' | append:'/thumb.png' | prepend:'.' }}" /></a>
+        <a class="experiment-link" href="{{ experiment.url | prepend:'.' }}">{{experiment.title}}</a>
       </div>
       {% endfor %}
     </div>
@@ -23,29 +23,4 @@ layout: default
 </div>
 
 
-  <div class="row clearfix">
-  <h2>Components</h2>
-
-    {% for component in site.components %}
-      <div class="experiment">
-        <a  href="{{ component.url | relative_url }}"><img class="thumb" src="{{ component.eid | prepend:'/src/' | append:'/thumb.png' | relative_url }}" /></a>
-        <a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a>
-      </div>
-
-    {% endfor %}
-  </div>
-<!--
-  {% for type in site.data.uncertainty.types %}
-    <p>{{type.name}}</p>
-    {% assign experiments = site.experiments | where:'group', post.group %}
-  {% endfor %} -->
-
-
-  <!-- {% for experiment in site.experiments %}
-    <div class="experiment"><a class="post-link" href="{{ experiment.url | relative_url }}">{{experiment.title}}</a></div>
-  {% endfor %}
- -->
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
- -->
 </div>

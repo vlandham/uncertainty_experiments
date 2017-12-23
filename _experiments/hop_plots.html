@@ -1,0 +1,66 @@
+---
+eid: hop_plots
+title: HOP Plots
+uncertainty_type: cardinal
+encoding: animation
+features:
+ - animation
+js: true
+css: true
+---
+
+<p>
+  HOP plots use animation to show potential values from a distribution.
+</p>
+
+<p>
+  Below is a simple HOP plot implementation with two different speeds.
+</p>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-5">
+    <div id="hop2"></div>
+    <p class="caption">Slow HOP Plot</p>
+  </div>
+
+  <div class="col-md-5">
+    <div id="hop1"></div>
+    <p class="caption">Fast HOP Plot</p>
+  </div>
+</div>
+
+<p>
+In order to use this to better understand a distribution, we can experiment with additional effects. This version uses an "onion skin" approach to maintain some of the previous bars over time.
+</p>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-5">
+    <div id="hop4"></div>
+    <p class="caption">Slow Onion HOP Plot</p>
+  </div>
+
+  <div class="col-md-5">
+    <div id="hop3"></div>
+    <p class="caption">Fast Onion HOP Plot</p>
+  </div>
+</div>
+
+<p>
+Here are more HOP plots showing different underlying distributions
+</p>
+
+<div class="row">
+  <div class="col-md-4">
+    <div id="hop5"></div>
+    <p class="caption">Lower values, narrow distribution</p>
+  </div>
+
+  <div class="col-md-4">
+    <div id="hop6"></div>
+    <p class="caption">Higher values, narrow distribution</p>
+  </div>
+  <div class="col-md-4">
+    <div id="hop7"></div>
+    <p class="caption">Higher values, wider distribution</p>
+  </div>
+</div>

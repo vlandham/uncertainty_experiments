@@ -11,9 +11,10 @@ layout: default
     {{ content }}
   </div>
 
+
   {% if page.js %}
-    {% assign subdir = page.eid | append:'/' %}
-    <script src="{{ subdir | prepend:'/src/' | append:page.eid | append:'.js' | relative_url }}"></script>
+    {% assign subdir = page.eid | append:'/'  %}
+    <script src="{{ subdir | prepend:'/src/' | append:page.eid | append:'.js' | prepend:site.url }}"></script>
   {% endif %}
 
 </article>
