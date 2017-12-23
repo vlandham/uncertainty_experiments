@@ -16,7 +16,7 @@
 title: Uncertainty Experiments
 description: > # this means to ignore newlines until "baseurl:"
   Uncertainty Experiments
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/uncertainty_experiments" # the subpath of your site, e.g. /blog
 url: "http://vallandingham.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
